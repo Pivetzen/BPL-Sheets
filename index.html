@@ -6,8 +6,37 @@
     <title>Especialista em Google Sheets | Planilhas Inteligentes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            padding: 12px 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            transform: translateY(-3px);
+            background-color: #128c7e;
+            color: white;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
+
+    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de tirar uma dúvida sobre seus serviços de planilhas." class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+        <span class="hidden md:inline">Dúvidas? Fale comigo!</span>
+    </a>
 
     <header class="bg-green-600 py-16 text-white text-center">
         <h1 class="text-4xl font-extrabold mb-4 px-4">Soluções Práticas em Google Sheets</h1>
@@ -60,7 +89,7 @@
                 </div>
                 <ul class="mb-8 space-y-3 flex-grow text-sm">
                     <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Consultoria empresarial</li>
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Integração entre planilhas diversas</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Integração entre planilhas</li>
                     <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Suporte Prioritário</li>
                 </ul>
                 <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre o Plano Business para minha empresa." class="block text-center bg-gray-800 text-white py-3 rounded-lg font-semibold hover:bg-gray-900 transition">Falar com Consultor</a>
@@ -78,7 +107,7 @@
                 <div class="space-y-4">
                     <p class="text-lg leading-relaxed font-medium">
                         Transformo planilhas confusas em ferramentas de gestão profissional.
-                    </p>                    
+                    </p>
                     <ul class="space-y-2 text-sm font-semibold text-gray-700">
                         <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Praticidade</li>
                         <li><i class="fa-solid fa-bolt text-green-600 mr-2"></i> Agilidade</li>
@@ -86,7 +115,7 @@
                     </ul>
                 </div>
                 <div class="bg-green-50 p-8 rounded-2xl border-dashed border-2 border-green-200">
-                    <p class="italic text-green-800 font-medium">
+                    <p class="italic text-green-800 font-medium text-center">
                         "Meu foco é que a gente desenvolva uma planilha com a sua cara. Sem detalhismos ou padrões desnecessários. Do seu jeito!"
                     </p>
                 </div>
